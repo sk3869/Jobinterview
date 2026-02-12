@@ -2,88 +2,250 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional Vibe Check</title>
+  <title>Strong CTA — Data Scientist Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Strong CTA hero section for a Data Scientist portfolio." />
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 2rem;
-      background: #0b0f19;
-      color: #f3f4f6;
-      font-family: system-ui, sans-serif;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #1d283a 0, #020617 45%, #000 100%);
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
     }
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #22c55e;
-    }
-
-    p {
-      color: #d1d5db;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-
-    table {
+    .card {
+      max-width: 900px;
       width: 100%;
-      border-collapse: collapse;
-      background: #111827;
-      border-radius: 8px;
-      overflow: hidden;
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 1.25rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
+      padding: 2.25rem 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 2rem;
+      backdrop-filter: blur(18px);
     }
 
-    th, td {
-      padding: 0.75rem;
-      text-align: left;
-      border-bottom: 1px solid #374151;
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 0.75rem;
     }
 
-    th {
-      background: #1f2937;
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2.1rem, 3vw, 2.7rem);
+      line-height: 1.15;
       color: #f9fafb;
     }
 
-    td {
+    .highlight {
+      color: #22c55e;
+    }
+
+    .subhead {
+      font-size: 0.98rem;
+      color: #cbd5f5;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      max-width: 32rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      border-radius: 999px;
+      padding: 0.8rem 1.6rem;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #22c55e, #4ade80);
+      color: #022c22;
+      font-weight: 600;
+      box-shadow: 0 16px 40px rgba(34, 197, 94, 0.45);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 50px rgba(34, 197, 94, 0.6);
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #e5e7eb;
+      border: 1px solid #4b5563;
+    }
+
+    .btn-secondary:hover {
+      background: #020617;
+      border-color: #9ca3af;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 118, 110, 0.18);
+      border: 1px solid rgba(45, 212, 191, 0.4);
+      color: #a5f3fc;
+      font-size: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
+    }
+
+    .side {
+      border-left: 1px solid rgba(51, 65, 85, 0.8);
+      padding-left: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .side-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
+    }
+
+    .side-line {
+      font-size: 0.9rem;
       color: #e5e7eb;
     }
 
-    .strong {
-      color: #22c55e;
-      font-weight: 600;
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid #1f2937;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-right: 0.35rem;
+      margin-top: 0.25rem;
     }
 
-    .weak {
-      color: #9ca3af;
+    @media (max-width: 768px) {
+      .card {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 1.75rem 1.5rem;
+      }
+      .side {
+        border-left: none;
+        border-top: 1px solid rgba(51, 65, 85, 0.8);
+        padding-left: 0;
+        padding-top: 1.5rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Goal</th>
-        <th>Weak CTA (C‑Level)</th>
-        <th>Strong CTA (A‑Level)</th>
-      </tr>
-    </thead>
+  <section class="card">
+    <div>
+      <div class="eyebrow">NJIT · Data Science · Deep Learning</div>
 
-    <tbody>
-      <tr>
-        <td>Job Seeker</td>
-        <td class="weak">“Let me know if you're interested.”</td>
-        <td class="strong">“Request My Technical Resume”</td>
-      </tr>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Strong CTA Level · Job Seeker
+      </div>
 
-      <tr>
-        <td>Consultant</td>
-        <td class="weak">“I can help with tech projects.”</td>
-        <td class="strong">“Claim Your Free AI Performance Audit”</td>
-      </tr>
-    </tbody>
-  </table>
+      <h1>
+        I am a <span class="highlight">Data Scientist</span><br />
+        specializing in Deep Learning.
+      </h1>
 
+      <p class="subhead">
+        I design, train, and deploy deep learning models for computer vision and NLP. My work focuses on
+        building reliable, production‑ready models using Python, PyTorch, and TensorFlow, with a strong
+        emphasis on clear evaluation, reproducibility, and real‑world impact.
+      </p>
+
+      <div class="cta-row">
+        <!-- STRONG CTA (A-Level) -->
+        <a href="https://github.com/your-username?tab=repositories"
+           class="btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">
+          View My Deep Learning Case Studies
+        </a>
+
+        <!-- Secondary but still purposeful CTA -->
+        <a href="mailto:your.email@njit.edu?subject=Data%20Science%20Role%20Inquiry"
+           class="btn-secondary">
+          Request My Technical Resume
+        </a>
+      </div>
+
+      <p class="meta">
+        Based in Newark, NJ · Open to NJ/NY hybrid and remote roles · Focus: applied deep learning, computer vision, NLP.
+      </p>
+    </div>
+
+    <aside class="side">
+      <div class="side-title">Why this is a strong CTA</div>
+      <div class="side-line">
+        The primary button clearly tells the visitor what I offer and where to see proof:
+        <strong>deep learning case studies</strong>, not just a generic “contact me.”
+      </div>
+      <div class="side-line">
+        The secondary CTA gives a direct, professional next step:
+        <strong>“Request My Technical Resume”</strong> — aligned with a hiring manager’s intent.
+      </div>
+      <div>
+        <span class="pill">Clear Role: Data Scientist</span>
+        <span class="pill">Specific Niche: Deep Learning</span>
+        <span class="pill">Concrete Proof: Case Studies</span>
+        <span class="pill">Actionable Next Step: Resume</span>
+      </div>
+    </aside>
+  </section>
 </body>
 </html>
+
