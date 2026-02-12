@@ -1,0 +1,60 @@
+1. What is your exact career outcome?
+I want to become a Data Scientist specializing in Deep Learning, ideally working on computer vision or medical imaging models in the NJ/NY tech ecosystem.
+
+
+2. Who is your target audience?
+My primary audience is data science recruiters and hiring managers at AI‑focused companies. Secondary audience includes research labs, healthcare AI startups, and teams working on applied machine learning.
+
+
+3. What technical skills do you already have?
+I’m comfortable with Python, NumPy, Pandas, Matplotlib, Scikit‑learn, TensorFlow, and PyTorch. I also know basic SQL and have experience training CNNs and LSTMs for class projects.
+
+
+Disagreement : Why React for a simple portfolio?
+Isn’t that overkill for a static site?
+Is there a lighter, faster option we can deploy without unnecessary complexity?
+
+
+Since my goal is to become a Deep Learning Data Scientist, not a front‑end engineer, I’d prefer something minimal like HTML/CSS/JS unless there’s a strong strategic reason to use something heavier.
+
+
+
+
+4. What “proof” do you have?
+I have three strong projects:
+
+
+A CNN that classifies brain MRI images
+
+
+A sentiment analysis model using LSTMs
+
+
+A Kaggle project where I built a tabular classifier with feature engineering and hyperparameter tuning
+
+
+All of them are on GitHub.
+
+
+5. Which project are you MOST proud of, and why?
+The MRI classifier — because it pushed me into real deep learning workflows like data augmentation, transfer learning, and evaluating model drift. It also aligns with healthcare AI, which I’m interested in.
+
+
+6. What industries interest you?
+Healthcare AI, fintech analytics, and any company doing applied deep learning for imaging or NLP.
+
+
+7. How comfortable are you with front-end tools like HTML/CSS/JS?
+I’m comfortable with basic HTML/CSS and can build a clean static site. I’m not trying to build anything complex — just something professional and fast.
+
+
+8. Do you want your site to feel more:
+Technical and developer‑focused. I want it to look like a portfolio for someone serious about machine learning.
+
+
+9. What is the ONE action you want visitors to take?
+Download my technical resume or view my GitHub deep learning projects.
+
+
+10. What is your timeline?
+I want something clean and functional quickly — I can always expand it later.
