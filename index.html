@@ -1,27 +1,97 @@
-<table style="width:100%; border-collapse:collapse; font-family:system-ui, sans-serif;">
-  <thead>
-    <tr style="background:#1f2937; color:#f9fafb;">
-      <th style="padding:0.75rem; text-align:left; border-bottom:1px solid #374151;">Goal</th>
-      <th style="padding:0.75rem; text-align:left; border-bottom:1px solid #374151;">Weak CTA (C‑Level)</th>
-      <th style="padding:0.75rem; text-align:left; border-bottom:1px solid #374151;">Strong CTA (A‑Level)</th>
-    </tr>
-  </thead>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Vibe Check</title>
 
-  <tbody>
-    <tr>
-      <td style="padding:0.75rem; border-bottom:1px solid #374151;">Job Seeker</td>
-      <td style="padding:0.75rem; border-bottom:1px solid #374151;">“Let me know if you're interested.”</td>
-      <td style="padding:0.75rem; border-bottom:1px solid #374151; font-weight:600; color:#22c55e;">
-        “Request My Technical Resume”
-      </td>
-    </tr>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: #0b0f19;
+      color: #f3f4f6;
+      font-family: system-ui, sans-serif;
+    }
 
-    <tr>
-      <td style="padding:0.75rem;">Consultant</td>
-      <td style="padding:0.75rem;">“I can help with tech projects.”</td>
-      <td style="padding:0.75rem; font-weight:600; color:#22c55e;">
-        “Claim Your Free AI Performance Audit”
-      </td>
-    </tr>
-  </tbody>
-</table>
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #22c55e;
+    }
+
+    p {
+      color: #d1d5db;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #111827;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #374151;
+    }
+
+    th {
+      background: #1f2937;
+      color: #f9fafb;
+    }
+
+    td {
+      color: #e5e7eb;
+    }
+
+    .strong {
+      color: #22c55e;
+      font-weight: 600;
+    }
+
+    .weak {
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>4. Grading: The "Professional Vibe" Check</h2>
+
+  <p>
+    A "Professional" grade is awarded when a visitor understands exactly what you offer within 
+    <strong>5 seconds</strong> of landing on your site.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Goal</th>
+        <th>Weak CTA (C‑Level)</th>
+        <th>Strong CTA (A‑Level)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Job Seeker</td>
+        <td class="weak">“Let me know if you're interested.”</td>
+        <td class="strong">“Request My Technical Resume”</td>
+      </tr>
+
+      <tr>
+        <td>Consultant</td>
+        <td class="weak">“I can help with tech projects.”</td>
+        <td class="strong">“Claim Your Free AI Performance Audit”</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
